@@ -8,18 +8,6 @@
         </directive>
         <directive functionName="dijkstra" label="" functionLabel="">
             <pragma name="INTERFACE">
-                <option name="axis" value="" positionalBoolean="mode"/>
-                <option name="port" value="in" positionalBoolean="4"/>
-            </pragma>
-        </directive>
-        <directive functionName="dijkstra" label="" functionLabel="">
-            <pragma name="INTERFACE">
-                <option name="axis" value="" positionalBoolean="mode"/>
-                <option name="port" value="out" positionalBoolean="4"/>
-            </pragma>
-        </directive>
-        <directive functionName="dijkstra" label="" functionLabel="">
-            <pragma name="INTERFACE">
                 <option name="s_axilite" value="" positionalBoolean="mode"/>
                 <option name="port" value="start_point" positionalBoolean="4"/>
             </pragma>
@@ -83,6 +71,18 @@
         </directive>
         <directive functionName="dijkstra" label="send_result" functionLabel="">
             <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="port" value="d_in" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="port" value="d_out" positionalBoolean="4"/>
+            </pragma>
         </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="dijkstra.cpp" path="C:\Users\buleks\Desktop\sdwup\projekt\dijkstra_zynq\HLS\dijkstra_hls\dijkstra.cpp"/>
     <originFiles name="dijkstra.h" path="C:\Users\buleks\Desktop\sdwup\projekt\dijkstra_zynq\HLS\dijkstra_hls\dijkstra.h"/>
+    <originFiles name="dijkstra.cpp" path="C:\Users\buleks\Desktop\sdwup\projekt\dijkstra_zynq\HLS\dijkstra_hls\dijkstra.cpp"/>
   </source>
   <testbench>
     <originFiles name="test.cpp" path="C:\Users\buleks\Desktop\sdwup\projekt\dijkstra_zynq\HLS\dijkstra_hls\test.cpp"/>

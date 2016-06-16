@@ -1,6 +1,6 @@
 #include "dijkstra.h"
 
-void dijkstra(axi_interface_type in[N*N], ap_uint<8> start_point, axi_interface_type out[N])
+void dijkstra(axi_interface_type d_in[N*N], ap_uint<8> start_point, axi_interface_type d_out[N])
 {
  static uint8_t vector[N];
  static uint8_t matrix[N][N];
@@ -18,7 +18,7 @@ void dijkstra(axi_interface_type in[N*N], ap_uint<8> start_point, axi_interface_
  {
 	 input_copy_i: for(e = 0; e < N;e++)
 	 {
-		 matrix[i][e] = in[e+i*N].data;
+		 matrix[i][e] = d_in[e+i*N].data;
 	 }
 
  }
@@ -81,25 +81,26 @@ void dijkstra(axi_interface_type in[N*N], ap_uint<8> start_point, axi_interface_
 	 }
 
 	 //if all vertex(elements of vector) is equal 1, it could break main loop and send result
+	 bool end = true;
 	 check:for(i = 1; i < N;i++)
 	 {
 		 if(vector[i] != 1)
 		 {
-			 break;
+			 end = false;
 		 }
 	 }
-	 if(i >= N -1) break;
+	 if(end) break;
  }
 
  send_result: for(i = 0;i < N;i++)
  {
-	 out[i].data = result[i];
+	 d_out[i].data = result[i];
 	 if(i < N-1)
 	 {
-		 out[i].last = 0;
+		 d_out[i].last = 0;
 	 }else
 	 {
-		 out[i].last = 1;
+		 d_out[i].last = 1;
 	 }
  }
 

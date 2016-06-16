@@ -11,18 +11,7 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:31.137+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:31.116+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:30.748+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:30.723+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:30.699+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:30.677+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:30.655+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:30.350+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:30.327+0200" type="Warning"/>
-        <logs message="@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:40:30.304+0200" type="Warning"/>
-      </synLog>
+      <synLog/>
       <simLog/>
       <mgLog/>
       <packageLog/>

@@ -10,11 +10,6 @@ struct axi_interface_type{
     ap_uint<1>   last;
   };
 
-//struct axi_interface_type{
-//    uint8_t  data;
-//    uint8_t   last : 1;
-//  };
-
-void dijkstra(axi_interface_type in[N*N], ap_uint<8> start_point, axi_interface_type out[N]);
+void dijkstra(axi_interface_type d_in[N*N], ap_uint<8> start_point, axi_interface_type d_out[N]);
 
 #endif
