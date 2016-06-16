@@ -8,5 +8,81 @@ Copyright (C) 2014 Xilinx Inc. All rights reserved.
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [LIC-101] Checked out feature [HLS]
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
-@I [SIM-1] CSim done with 0 errors.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Analyzing design file 'dijkstra_hls/dijkstra.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-501] Unrolling loop 'reset' (dijkstra_hls/dijkstra.cpp:12) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'input_copy_o' (dijkstra_hls/dijkstra.cpp:18) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'input_copy_i' (dijkstra_hls/dijkstra.cpp:20) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'max_values_o' (dijkstra_hls/dijkstra.cpp:30) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'max_values_i' (dijkstra_hls/dijkstra.cpp:35) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'min_o' (dijkstra_hls/dijkstra.cpp:43) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'min_i' (dijkstra_hls/dijkstra.cpp:47) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'substract_o' (dijkstra_hls/dijkstra.cpp:58) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'substract_i' (dijkstra_hls/dijkstra.cpp:62) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'mark_vertex_o' (dijkstra_hls/dijkstra.cpp:69) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'mark_vertex_i' (dijkstra_hls/dijkstra.cpp:73) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'check' (dijkstra_hls/dijkstra.cpp:85) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'send_result' (dijkstra_hls/dijkstra.cpp:95) in function 'dijkstra' completely.
+@I [XFORM-102] Partitioning array 'result' automatically.
+@I [XFORM-101] Partitioning array 'vector'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.0'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.1'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.2'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.3'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.4'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.5'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.6'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.7'  in dimension 1 completely.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@W [XFORM-302] Region 'check' (dijkstra_hls/dijkstra.cpp:85:35) overlaps with another region 'main_loop' (dijkstra_hls/dijkstra.cpp:27:38), which may result in unpredictable synthesis results.
+@I [XFORM-401] Performing if-conversion on hyperblock from (dijkstra_hls/dijkstra.cpp:44:4) to (dijkstra_hls/dijkstra.cpp:59:4) in function 'dijkstra'... converting 17 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock from (dijkstra_hls/dijkstra.cpp:86:4) to (dijkstra_hls/dijkstra.cpp:86:4) in function 'dijkstra'... converting 5 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock to (dijkstra_hls/dijkstra.cpp:27:3) in function 'dijkstra'... converting 9 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock from (dijkstra_hls/dijkstra.cpp:86:4) to (dijkstra_hls/dijkstra.cpp:106:1) in function 'dijkstra'... converting 3 basic blocks.
+@I [HLS-111] Elapsed time: 17.11 seconds; current memory usage: 92.3 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'dijkstra' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'dijkstra' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 2.484 seconds; current memory usage: 103 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'dijkstra' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.433 seconds; current memory usage: 104 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'dijkstra' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/in_data_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/in_last_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/start_point_V' to 's_axilite & ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/out_data_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/out_last_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on function 'dijkstra' to 's_axilite & ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'dijkstra'.
+@I [HLS-111] Elapsed time: 0.63 seconds; current memory usage: 106 MB.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'dijkstra'.
+@I [WVHDL-304] Generating RTL VHDL for 'dijkstra'.
+@I [WVLOG-307] Generating RTL Verilog for 'dijkstra'.
+@I [HLS-112] Total elapsed time: 21.983 seconds; peak memory usage: 106 MB.
 @I [LIC-101] Checked in feature [HLS]

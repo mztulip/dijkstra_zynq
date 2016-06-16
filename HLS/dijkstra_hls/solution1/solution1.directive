@@ -1,2 +1,89 @@
-<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView"/>
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="return" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="port" value="in" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="axis" value="" positionalBoolean="mode"/>
+                <option name="port" value="out" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="start_point" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="vector" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="matrix" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="2"/>
+            </pragma>
+        </directive>
+        <directive functionName="dijkstra" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="matrix" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="dijkstra" label="reset" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="input_copy_i" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="input_copy_o" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="max_values_o" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="max_values_i" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="min_o" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="min_i" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="substract_i" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="substract_o" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="mark_vertex_o" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="mark_vertex_i" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="check" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="dijkstra" label="send_result" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
 

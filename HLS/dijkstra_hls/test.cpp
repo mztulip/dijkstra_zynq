@@ -28,12 +28,12 @@ int main()
 
 	fill_matrix(neigbour_matrix,graph1);
 	dijkstra(neigbour_matrix,START_POINT,result);
+
+	print_result(result);
 	if(!check_result(result,graph1_res))
 	{
-		cout<<"Incorrect result";
+		cout<<"Incorrect result!";
 	}
-	print_result(result);
-
 	return 0;
 }
 
@@ -131,6 +131,14 @@ void init()
 
 bool check_result(axi_interface_type result[N],uint8_t res[N])
 {
-
+	int i;
+	for(i = 0; i < N;i++)
+	{
+		if(result[i].data != res[i])
+		{
+			return false;
+		}
+	}
+	return true;
 }
 

@@ -94,7 +94,7 @@ void dijkstra(axi_interface_type in[N*N], ap_uint<8> start_point, axi_interface_
  send_result: for(i = 0;i < N;i++)
  {
 	 out[i].data = result[i];
-	 if(i <= N-1)
+	 if(i < N-1)
 	 {
 		 out[i].last = 0;
 	 }else

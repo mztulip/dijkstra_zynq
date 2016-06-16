@@ -1,12 +1,11 @@
-   Compiling ../../../test.cpp in debug mode
    Compiling ../../../dijkstra.cpp in debug mode
    Generating csim.exe
-Incorrect result1:1,0
+1:1,0
 2:3,0
 3:1,0
 4:2,0
 5:4,0
 6:5,0
 7:6,0
-8:1,0
+8:1,1
 @I [SIM-1] CSim done with 0 errors.
