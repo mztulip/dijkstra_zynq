@@ -7,6 +7,7 @@
       <mgLog/>
       <packageLog/>
       <csimLog>
+        <logs message="@E [SIM-1] 'csim_design' failed: compilation error(s).&#xD;&#xA;4&#xD;&#xA;    while executing&#xD;&#xA;&quot;csim_design -quiet&quot;&#xD;&#xA;    (file &quot;C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/csim.tcl&quot; line 8)" projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T23:17:35.577+0200"/>
         <logs message="@E [SIM-1] 'csim_design' failed: compilation error(s).&#xD;&#xA;4&#xD;&#xA;    while executing&#xD;&#xA;&quot;csim_design -quiet&quot;&#xD;&#xA;    (file &quot;C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/csim.tcl&quot; line 8)" projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:16:43.830+0200"/>
         <logs message="@E [SIM-1] 'csim_design' failed: compilation error(s).&#xD;&#xA;4&#xD;&#xA;    while executing&#xD;&#xA;&quot;csim_design -quiet&quot;&#xD;&#xA;    (file &quot;C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/csim.tcl&quot; line 8)" projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:15:37.641+0200"/>
         <logs message="@E [SIM-1] 'csim_design' failed: compilation error(s).&#xD;&#xA;4&#xD;&#xA;    while executing&#xD;&#xA;&quot;csim_design -quiet&quot;&#xD;&#xA;    (file &quot;C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/csim.tcl&quot; line 8)" projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:13:14.460+0200"/>

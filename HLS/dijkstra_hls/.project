@@ -34,42 +34,42 @@
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/.apc/.tb</location>
+			<location>C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/.tcls</location>
+			<location>C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/dijkstra.cpp</name>
 			<type>1</type>
-			<location>C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/dijkstra.cpp</location>
+			<location>C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/dijkstra.cpp</location>
 		</link>
 		<link>
 			<name>source/dijkstra.h</name>
 			<type>1</type>
-			<location>C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/dijkstra.h</location>
+			<location>C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/dijkstra.h</location>
 		</link>
 		<link>
 			<name>testbench/test.cpp</name>
 			<type>1</type>
-			<location>C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/test.cpp</location>
+			<location>C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/solution1.directive</location>
+			<location>C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/directives.tcl</location>
+			<location>C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/script.tcl</location>
+			<location>C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
