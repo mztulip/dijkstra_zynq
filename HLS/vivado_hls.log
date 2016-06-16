@@ -1,0 +1,21 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2014.4/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'buleks' on host 'xzkljcsabdye' (Windows NT_amd64 version 6.1) on Thu Jun 16 22:56:55 +0200 2016
+            in directory 'C:/Users/buleks/Desktop/sdwup/projekt/HLS'
+@I [HLS-10] Opening project 'C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls'.
+@I [HLS-10] Opening solution 'C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+   Compiling ../../../test.cpp in debug mode
+   Generating csim.exe
+1:1,0
+2:3,0
+3:1,0
+4:2,0
+5:4,0
+6:5,0
+7:6,0
+8:1,0
+@I [SIM-1] CSim done with 0 errors.
+@I [LIC-101] Checked in feature [HLS]

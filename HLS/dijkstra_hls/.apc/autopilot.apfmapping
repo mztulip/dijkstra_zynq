@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dijkstra.cpp" path="C:\Users\buleks\Desktop\sdwup\projekt\HLS\dijkstra_hls\dijkstra.cpp"/>
+    <originFiles name="dijkstra.h" path="C:\Users\buleks\Desktop\sdwup\projekt\HLS\dijkstra_hls\dijkstra.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="C:\Users\buleks\Desktop\sdwup\projekt\HLS\dijkstra_hls\test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

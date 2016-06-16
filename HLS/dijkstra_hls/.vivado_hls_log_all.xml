@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="@E [SIM-1] 'csim_design' failed: compilation error(s).&#xD;&#xA;4&#xD;&#xA;    while executing&#xD;&#xA;&quot;csim_design -quiet&quot;&#xD;&#xA;    (file &quot;C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/csim.tcl&quot; line 8)" projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:16:43.830+0200"/>
+        <logs message="@E [SIM-1] 'csim_design' failed: compilation error(s).&#xD;&#xA;4&#xD;&#xA;    while executing&#xD;&#xA;&quot;csim_design -quiet&quot;&#xD;&#xA;    (file &quot;C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/csim.tcl&quot; line 8)" projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:15:37.641+0200"/>
+        <logs message="@E [SIM-1] 'csim_design' failed: compilation error(s).&#xD;&#xA;4&#xD;&#xA;    while executing&#xD;&#xA;&quot;csim_design -quiet&quot;&#xD;&#xA;    (file &quot;C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/csim.tcl&quot; line 8)" projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:13:14.460+0200"/>
+        <logs message="@E [SIM-1] 'csim_design' failed: compilation error(s).&#xD;&#xA;4&#xD;&#xA;    while executing&#xD;&#xA;&quot;csim_design -quiet&quot;&#xD;&#xA;    (file &quot;C:/Users/buleks/Desktop/sdwup/projekt/HLS/dijkstra_hls/solution1/csim.tcl&quot; line 8)" projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:12:02.742+0200"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_q1' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.357+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'dijkstra/in_last_V_d1' to 0." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.357+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_d1' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.357+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'dijkstra/in_last_V_we1' to 0." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.357+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_we1' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.347+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'dijkstra/in_last_V_ce1' to 0." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.337+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_ce1' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.327+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'dijkstra/in_last_V_address1' to 0." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.327+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_address1' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.317+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_q0' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.317+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'dijkstra/in_last_V_d0' to 0." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.317+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_d0' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.317+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'dijkstra/in_last_V_we0' to 0." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.307+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_we0' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.307+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'dijkstra/in_last_V_ce0' to 0." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.307+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_ce0' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.307+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Setting dangling out port 'dijkstra/in_last_V_address0' to 0." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.297+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'dijkstra/in_last_V_address0' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.297+0200" type="Warning"/>
+        <logs message="@W [XFORM-562] Loop 'check' (dijkstra_hls/dijkstra.cpp:86) in function 'dijkstra' has unknown bound because it has multiple exiting blocks." projectName="dijkstra_hls" solutionName="solution1" date="2016-06-16T22:11:31.027+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
