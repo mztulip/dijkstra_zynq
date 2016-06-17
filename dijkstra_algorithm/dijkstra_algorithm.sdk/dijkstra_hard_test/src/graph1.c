@@ -9,6 +9,7 @@
 #include "graph1.h"
 
 uint8_t graph1[N][N];
+uint8_t graph1_res[N];
 
 void InitGraph1(void) {
 	int i, e;
@@ -54,6 +55,15 @@ void InitGraph1(void) {
 
 	graph1[7][0] = 2;
 	graph1[7][3] = 2;
+
+	graph1_res[0]=0;
+	graph1_res[1]=2;
+	graph1_res[2]=0;
+	graph1_res[3]=1;
+	graph1_res[4]=3;
+	graph1_res[5]=4;
+	graph1_res[6]=5;
+	graph1_res[7]=0;
 
 
 }

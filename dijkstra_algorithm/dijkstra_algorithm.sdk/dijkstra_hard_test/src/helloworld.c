@@ -62,12 +62,13 @@ void FillBuffer(uint8_t g[N][N]);
 void PrintResult(void);
 void SoftDijkstraCalculate(void);
 void SoftDijkstra2Calculate(void);
+int CheckResult(uint8_t a[N],uint8_t b[N]);
 
 XAxiDma AxiDma;
 XDijkstra Dijkstra;
 
-u8 *TxBufferPtr;
-u8 *RxBufferPtr;
+u8 *TxBufferPtr = TX_BUFFER_BASE;
+u8 *RxBufferPtr = RX_BUFFER_BASE;
 
 const uint8_t START_POINT = 0;
 
@@ -101,9 +102,32 @@ int main()
 	//SoftDijkstra2Calculate();
 	XTime_GetTime(&StopSoftTime);
 	PrintResult();
+	if(CheckResult(RxBufferPtr,graph1_res) == XST_SUCCESS)
+	{
+		printf("\nResult ok.");
+	}else
+	{
+		printf("\nResult failure!");
+	}
+	printf("\nFinish.");
+	while(1){}
 	cleanup_platform();
 	return 0;
 }
+
+int CheckResult(uint8_t a[N],uint8_t b[N])
+{
+	int i;
+	for(i = 0; i < N;i++)
+	{
+		if(a[i] != b[i])
+		{
+			return XST_FAILURE;
+		}
+	}
+	return XST_SUCCESS;
+}
+
 void FillBuffer(uint8_t g[N][N])
 {
 	int i, e;

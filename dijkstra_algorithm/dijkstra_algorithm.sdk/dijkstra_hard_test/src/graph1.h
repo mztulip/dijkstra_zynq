@@ -9,6 +9,7 @@
 #define GRAPH1_H_
 
 extern uint8_t graph1[N][N];
+extern uint8_t graph1_res[N];
 void InitGraph1(void);
 
 #endif /* GRAPH1_H_ */
