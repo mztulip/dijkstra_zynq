@@ -124,8 +124,10 @@ void PrintResult(void)
 	{
 		printf("%d:%d\n",i,RxBufferPtr[i]);
 	}
-	printf("\nExecution time:%llu",(unsigned long long)(StopTime-StartTime));
-	printf("\nSoft Execution time:%llu",(unsigned long long)(StopSoftTime-StartSoftTime));
+	XTime temp = ((StopTime-StartTime)*1000000000)/COUNTS_PER_SECOND;
+	printf("\nExecution time:%llu ns",(unsigned long long)(temp));
+	temp = ((StopSoftTime-StartSoftTime)*1000000000)/COUNTS_PER_SECOND;
+	printf("\nSoft Execution time:%llu ns",(unsigned long long)(temp));
 }
 void SoftDijkstraCalculate(void)
 {
