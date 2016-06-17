@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="dijkstra" xd:componentRef="dijkstra" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="d_in[].data" xd:originalName="d_in" xd:direction="in" xd:interfaceRef="d_in" xd:busTypeRef="axis" xd:arraySize="64" xd:dataWidth="8"/>
+  <xd:arg xd:name="d_in[].last" xd:originalName="d_in" xd:direction="in" xd:interfaceRef="d_in" xd:busTypeRef="axis" xd:arraySize="64" xd:dataWidth="1"/>
+  <xd:arg xd:name="start_point" xd:originalName="start_point" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="d_out[].data" xd:originalName="d_out" xd:direction="out" xd:interfaceRef="d_out" xd:busTypeRef="axis" xd:arraySize="8" xd:dataWidth="8"/>
+  <xd:arg xd:name="d_out[].last" xd:originalName="d_out" xd:direction="out" xd:interfaceRef="d_out" xd:busTypeRef="axis" xd:arraySize="8" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="4746" xd:FF="2462" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>
