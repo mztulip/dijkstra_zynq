@@ -60,6 +60,8 @@ int DijkstraConfig(void);
 void DijkstraCalculate(void);
 void FillBuffer(uint8_t g[N][N]);
 void PrintResult(void);
+void SoftDijkstraCalculate(void);
+void SoftDijkstra2Calculate(void);
 
 XAxiDma AxiDma;
 XDijkstra Dijkstra;
@@ -71,6 +73,8 @@ const uint8_t START_POINT = 0;
 
 XTime StartTime;
 XTime StopTime;
+XTime StartSoftTime;
+XTime StopSoftTime;
 
 int main()
 {
@@ -92,6 +96,10 @@ int main()
 	XTime_GetTime(&StartTime);
 	DijkstraCalculate();
 	XTime_GetTime(&StopTime);
+	XTime_GetTime(&StartSoftTime);
+	SoftDijkstraCalculate();
+	//SoftDijkstra2Calculate();
+	XTime_GetTime(&StopSoftTime);
 	PrintResult();
 	cleanup_platform();
 	return 0;
@@ -116,7 +124,160 @@ void PrintResult(void)
 	{
 		printf("%d:%d\n",i,RxBufferPtr[i]);
 	}
-	printf("Execution time:%llu",(unsigned long long)(StopTime-StartTime));
+	printf("\nExecution time:%llu",(unsigned long long)(StopTime-StartTime));
+	printf("\nSoft Execution time:%llu",(unsigned long long)(StopSoftTime-StartSoftTime));
+}
+void SoftDijkstraCalculate(void)
+{
+	//void alg(char tab[N+1][N+1], char prev[N+1]) {
+	uint8_t (*tab)[N] = graph1;
+	int i, j;
+	int p = 1;
+	char list[N];
+	char prev[N];
+
+	for(i = 0; i < N; i++)
+	{
+		list[i] = 0;
+	}
+	list[0] = 1;
+
+	for (i = 0; i < N; i++)
+	{
+		if (list[i] == 1)
+		{
+			for (j = 0; j < N; j++)
+			{
+				if (tab[i][j] > 0)
+				{
+					if (prev[j] == 0)
+						prev[j] = i;
+
+					if (list[j] == 0)
+						list[j] = 1;
+
+					if (tab[p][j] == 0)
+					{
+						tab[p][j] = tab[p][i] + tab[i][j];
+					}
+					else
+					{
+						if (tab[p][j] > tab[p][i] + tab[i][j])
+						{
+							tab[p][j] = tab[p][i] + tab[i][j];
+							prev[j] = i;
+						}
+					}
+				}
+			}
+			list[i] = 2;
+		}
+	}
+}
+void SoftDijkstra2Calculate(void)
+{
+	//void alg(char tab[N+1][N+1], char prev[N+1]) {
+	uint8_t (*tab)[N] = graph1;
+	static char vector[N];
+	static unsigned char copy[N][N];
+	static unsigned char result[N];
+	int i,e;
+
+
+	for(i = 0; i < N;i++)
+	{
+			vector[i] = 0;
+	}
+	vector[1]=1;
+
+	for(i = 0; i < N;i++)
+	{
+		for(e = 0;e < N ;e++)
+		{
+			copy[i][e] = tab[i][e];
+		}
+	}
+
+	while(1)
+	{
+		for(i = 0; i < N;i++)
+		{
+			if(vector[i] == 1)
+			{
+				for( e = 0; e < N;e++)
+				{
+					copy[e][i]=255;
+				}
+			}
+		}
+	//	print_table(tab);
+		//znajdz minimum
+		int min = 255;
+		for(i = 0; i < N;i++)//skacze po wierszach
+		{
+
+			if(vector[i] == 1)
+			{
+				for(e = 0; e < N;e++)
+				{
+
+					if(copy[i][e]  < min)
+					{
+						min = copy[i][e];
+					}
+
+				}
+			}
+		}
+
+		//teraz odejmij minimalna wartosc
+		//dla wszystkiech elementow wiersza
+		//dla wierszy gdzie vector == 1
+		for(i = 0; i < N;i++)//skacze po wierszach
+		{
+			if(vector[i] == 1)
+			{
+				//szuka minimum
+				for(e = 0; e < N;e++)
+				{
+					copy[i][e] -= min;
+				}
+			}
+		}
+
+		for(i = 0; i < N;i++)//skacze po wierszach
+			{
+				if(vector[i] == 1)
+				{
+					//szuka minimum
+					for(e = 0; e < N;e++)
+					{
+
+						if(copy[i][e] == 0)
+						{
+								vector[e]=1;
+								result[e] = i;
+						}
+
+					}
+				}
+			}
+
+
+		//jesli wszystkie elementy wektora == 1
+		//to koniec
+		uint8_t end = 1;
+		for(i = 0; i < N;i++)
+		{
+			if(vector[i] != 1)
+			{
+				end = 0;
+			}
+		}
+		if(end) break;
+
+	}
+
 }
 void DijkstraCalculate(void)
 {
