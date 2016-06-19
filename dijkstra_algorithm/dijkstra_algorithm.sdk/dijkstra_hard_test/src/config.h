@@ -8,6 +8,7 @@
 #ifndef CONFIG_H_
 #define CONFIG_H_
 
+#define MAX 255
 #define N 8
 
 #define MEM_BASE_ADDR		0x01000000
