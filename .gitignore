@@ -3,6 +3,7 @@
 *.lo
 *.o
 *.obj
+*.elf
 
 # Precompiled Headers
 *.gch
@@ -105,6 +106,6 @@
 #########
 !*.c
 !*.h
-!*.elf
+
 !*.bmm
 !*.xmp
