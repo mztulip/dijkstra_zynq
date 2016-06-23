@@ -7,14 +7,17 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
+../src/buffer.c \
 ../src/helloworld.c \
 ../src/platform.c 
 
 OBJS += \
+./src/buffer.o \
 ./src/helloworld.o \
 ./src/platform.o 
 
 C_DEPS += \
+./src/buffer.d \
 ./src/helloworld.d \
 ./src/platform.d 
 

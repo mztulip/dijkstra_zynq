@@ -20,7 +20,8 @@ src/helloworld.o src/helloworld.d: ../src/helloworld.c ../src/platform.h \
  ../../interface_bsp/ps7_cortexa9_0/include/xdebug.h \
  ../../interface_bsp/ps7_cortexa9_0/include/xdijkstra.h \
  ../../interface_bsp/ps7_cortexa9_0/include/xdijkstra_hw.h \
- ../src/config.h ../../interface_bsp/ps7_cortexa9_0/include/xtime_l.h
+ ../src/config.h ../../interface_bsp/ps7_cortexa9_0/include/xtime_l.h \
+ ../src/buffer.h ../../interface_bsp/ps7_cortexa9_0/include/xuartps_hw.h
 
 ../src/platform.h:
 
@@ -69,3 +70,7 @@ src/helloworld.o src/helloworld.d: ../src/helloworld.c ../src/platform.h \
 ../src/config.h:
 
 ../../interface_bsp/ps7_cortexa9_0/include/xtime_l.h:
+
+../src/buffer.h:
+
+../../interface_bsp/ps7_cortexa9_0/include/xuartps_hw.h:

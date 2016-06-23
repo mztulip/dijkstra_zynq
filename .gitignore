@@ -27,7 +27,6 @@
 # Executables
 *.exe
 *.out
-*.app
 
 *.log
 .autopilot
@@ -106,6 +105,6 @@
 #########
 !*.c
 !*.h
-
+!*.app
 !*.bmm
 !*.xmp
