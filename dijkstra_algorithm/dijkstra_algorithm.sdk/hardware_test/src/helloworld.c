@@ -308,9 +308,9 @@ void SoftDijkstra2Calculate(void)
 void DijkstraCalculate(void)
 {
 	int Status;
-	XDijkstra_Set_start_point_V(&Dijkstra, START_POINT);
-	XDijkstra_Start(&Dijkstra);
 
+	XDijkstra_Start(&Dijkstra);
+	XDijkstra_Set_start_point_V(&Dijkstra, 1);
 	Status = XAxiDma_SimpleTransfer(&AxiDma, (u32) TxBufferPtr,
 	N * N, XAXIDMA_DMA_TO_DEVICE);
 

@@ -18,6 +18,15 @@ void InitGraph1(void) {
 			graph1[i][e] = 255;
 		}
 	}
+
+//	graph1[0][2] = 7;
+//	graph1[1][2] = 1;
+//	graph1[2][3] = 5;
+//
+//	graph1[2][0] = 7;
+//	graph1[2][1] = 1;
+//	graph1[3][2] = 5;
+
 	graph1[0][1] = 3;
 	graph1[0][2] = 1;
 	graph1[0][6] = 7;
