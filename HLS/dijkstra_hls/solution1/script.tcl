@@ -5,8 +5,8 @@
 ############################################################
 open_project dijkstra_hls
 set_top dijkstra
-add_files dijkstra_hls/dijkstra.h
 add_files dijkstra_hls/dijkstra.cpp
+add_files dijkstra_hls/dijkstra.h
 add_files -tb dijkstra_hls/test.cpp
 open_solution "solution1"
 set_part {xc7z020clg484-1}

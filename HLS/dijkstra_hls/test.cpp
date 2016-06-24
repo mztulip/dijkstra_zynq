@@ -62,7 +62,7 @@ void print_result(axi_interface_type result[N])
 	int i;
 	for(i = 0; i < N;i++)
 	{
-		cout<<i+1<<":"<<(int)result[i].data+1<<","<<(int)result[i].last<<endl;
+		cout<<i<<":"<<(int)result[i].data<<","<<(int)result[i].last<<endl;
 	}
 }
 void fill_matrix(axi_interface_type m[N*N],uint8_t g[N][N])
@@ -81,6 +81,7 @@ void fill_matrix(axi_interface_type m[N*N],uint8_t g[N][N])
 void init()
 {
 	init_matrix(graph1);
+
 	graph1[0][1] = 3;
 	graph1[0][2] = 1;
 	graph1[0][6] = 7;

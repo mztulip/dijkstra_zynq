@@ -1,665 +1,575 @@
-@I [HLS-0] Workspace C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1 opened at Fri Jun 17 00:07:06 +0200 2016
+@I [HLS-0] Workspace C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1 opened at Fri Jun 24 13:40:14 +0200 2016
 @I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
-@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 1.287 sec.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.287 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "import_lib C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.lib "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/xilinx_interface.lib "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.288 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.288 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.288 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.288 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.288 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.289 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.289 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.289 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.289 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.290 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_old.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.292 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_vivado.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.292 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.295 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/xilinx_interface.hlp "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.295 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.295 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.295 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.296 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.296 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/dsp48e1.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.296 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.383 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.296 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.296 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed medium "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.296 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 1.297 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 4.399 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.015Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.299 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.299 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.301 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.304 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 1.311 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.311 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.399 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.399 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 1.318 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.414 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 1.326 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.414 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.327 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.414 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 1.427 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.093Total elapsed time: 4.508 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/tps/tcl/tcllib1.11.1/struct/list.tcl "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.447 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 1.448 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.524 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.539 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/tps/tcl/tcllib1.11.1/math/bignum.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.452 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 1.457 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.159Total elapsed time: 1.457 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.539 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.032Total elapsed time: 4.539 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 4.539 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.458 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.161Total elapsed time: 1.458 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.161Total elapsed time: 1.458 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.539 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 4.539 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 4.539 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.458 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 4.539 sec.
 @I [HLS-100] Command "import_lib C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv7.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.460 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.539 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv.hlp "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 1.471 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/xilinx_interface.hlp "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.471 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.472 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.472 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.472 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 1.472 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 1.473 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.017Total elapsed time: 1.476 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.015Total elapsed time: 4.555 sec.
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.478 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.478 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.555 sec.
 @I [HLS-100] Command "set_part xc7z020clg484-1 "
 @I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.481 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 4.555 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.074Total elapsed time: 1.555 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.546Total elapsed time: 5.101 sec.
 @I [HLS-100] Command "license_exists ap_opencl "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.077Total elapsed time: 1.632 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.297Total elapsed time: 5.397 sec.
 @I [HLS-100] Command "license_exists AUTOESL_NI "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.09Total elapsed time: 1.722 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.358Total elapsed time: 5.756 sec.
 @I [HLS-100] Command "license_exists HLS "
 @I [LICQ-103] Checked out feature [HLS]
 @I [LIC-101] Checked out feature [HLS]
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 0.21Total elapsed time: 1.932 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0.25Total elapsed time: 6.6 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.934 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 6.6 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.934 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 6.6 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.934 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.457Total elapsed time: 1.938 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 6.6 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 1.467Total elapsed time: 6.21 sec.
 @I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.939 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 6.21 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.091Total elapsed time: 2.31 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.358Total elapsed time: 6.380 sec.
 @I [HLS-100] Command "license_exists ap_opencl "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.09Total elapsed time: 2.121 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.312Total elapsed time: 6.692 sec.
 @I [HLS-100] Command "license_exists AUTOESL_NI "
-@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.106Total elapsed time: 2.227 sec.
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.312Total elapsed time: 7.4 sec.
 @I [HLS-100] Command "license_exists HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 2.227 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.29Total elapsed time: 2.228 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 7.4 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.998Total elapsed time: 7.20 sec.
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.75Total elapsed time: 2.228 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 2.465Total elapsed time: 7.20 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 2.228 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 7.20 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 2.228 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 7.20 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 2.228 sec.
-@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.955Total elapsed time: 2.229 sec.
-@I [HLS-100] Command "export_design -format ip_catalog -vendor buleks -display_name dijkstra "
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.240 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.246 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 2.247 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.248 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.249 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.249 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.250 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 2.253 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.253 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 2.257 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 2.262 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 2.271 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 2.271 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 2.279 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 2.287 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.288 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.094Total elapsed time: 2.382 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024Total elapsed time: 2.407 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.156Total elapsed time: 2.407 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.408 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.158Total elapsed time: 2.408 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.158Total elapsed time: 2.408 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 2.410 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 2.410 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.415 sec.
-@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.417 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.422 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.423 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.423 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.424 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.425 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.425 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.425 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.427 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.428 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 2.430 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 2.433 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 2.439 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 2.439 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 2.447 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 2.455 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.455 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.095Total elapsed time: 2.550 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.025Total elapsed time: 2.575 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.149Total elapsed time: 2.575 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.576 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.15Total elapsed time: 2.576 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.151Total elapsed time: 2.576 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 2.578 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 2.578 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.584 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 7.20 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 2.652Total elapsed time: 7.20 sec.
+@I [HLS-100] Command "set_part xc7z020clg484-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 7.35 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.468Total elapsed time: 7.503 sec.
+@I [HLS-100] Command "license_exists ap_opencl "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.764Total elapsed time: 8.268 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.499Total elapsed time: 8.767 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 8.767 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 8.782 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 8.782 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 8.782 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 1.747Total elapsed time: 8.782 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 8.782 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.234Total elapsed time: 9.16 sec.
+@I [HLS-100] Command "license_exists ap_opencl "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.203Total elapsed time: 9.219 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.187Total elapsed time: 9.406 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 9.406 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.624Total elapsed time: 9.406 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 2.387Total elapsed time: 9.406 sec.
+@I [HLS-100] Command "create_clock -period 10 -name default "
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 9.422 sec.
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0Total elapsed time: 9.422 sec.
+@I [HLS-100] Command "source ./dijkstra_hls/solution1/directives.tcl "
+@I [HLS-100] Command "set_directive_interface -mode s_axilite dijkstra "
+@I [HLS-100] Command 'set_directive_interface' returned 0; elapsed 0Total elapsed time: 9.422 sec.
+@I [HLS-100] Command "set_directive_interface -mode s_axilite dijkstra start_point "
+@I [HLS-100] Command 'set_directive_interface' returned 0; elapsed 0Total elapsed time: 9.422 sec.
+@I [HLS-100] Command "set_directive_array_partition -type complete -dim 1 dijkstra vector "
+@I [HLS-100] Command 'set_directive_array_partition' returned 0; elapsed 0Total elapsed time: 9.422 sec.
+@I [HLS-100] Command "set_directive_array_partition -type complete -dim 2 dijkstra matrix "
+@I [HLS-100] Command 'set_directive_array_partition' returned 0; elapsed 0Total elapsed time: 9.422 sec.
+@I [HLS-100] Command "set_directive_array_partition -type complete -dim 1 dijkstra matrix "
+@I [HLS-100] Command 'set_directive_array_partition' returned 0; elapsed 0Total elapsed time: 9.422 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/reset "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0.016Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/input_copy_i "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/input_copy_o "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/max_values_o "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/max_values_i "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/min_o "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/min_i "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/substract_i "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/substract_o "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/mark_vertex_o "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/mark_vertex_i "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/check "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_unroll dijkstra/send_result "
+@I [HLS-100] Command 'set_directive_unroll' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_interface -mode axis dijkstra d_in "
+@I [HLS-100] Command 'set_directive_interface' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "set_directive_interface -mode axis dijkstra d_out "
+@I [HLS-100] Command 'set_directive_interface' returned 0; elapsed 0Total elapsed time: 9.438 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 9.438 sec.
+@I [HLS-100] Command "csynth_design "
+@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
+@I [HLS-10] Analyzing design file 'dijkstra_hls/dijkstra.cpp' ... 
+@0 [HLS-0] Analyzing design file 'dijkstra_hls/dijkstra.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado_HLS/2014.4/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__cdecl=   -I "C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include" -I "C:/Xilinx/Vivado_HLS/2014.4/include" -I "C:/Xilinx/Vivado_HLS/2014.4/include/ap_sysc" -fexceptions "dijkstra_hls/dijkstra.cpp"  -o "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 1 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado_HLS/2014.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "dijkstra_hls/dijkstra.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado_HLS/2014.4/common/technology/autopilot" -I "C:/Xilinx/Vivado_HLS/2014.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredreturn 
+@I [HLS-0] Setting directive 'INTERFACE' s_axilite=positionBoolean0mode port=positionBooleanTextRequiredstart_point 
+@I [HLS-0] Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredvector complete=positionBoolean0type dim=1 
+@I [HLS-0] Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredmatrix complete=positionBoolean0type dim=2 
+@I [HLS-0] Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredmatrix complete=positionBoolean0type dim=1 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'UNROLL' 
+@I [HLS-0] Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequiredd_in 
+@I [HLS-0] Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequiredd_out 
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 10.748 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pp.0.cpp C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pp.0.cpp.ap-line.cpp C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Xilinx/Vivado_HLS/2014.4/tps/win64/jre/bin/java -Xmx512m -classpath   "C:/Xilinx/Vivado_HLS/2014.4/lib/classes/autopilot.sourceprocessor.jar;C:/Xilinx/Vivado_HLS/2014.4/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Xilinx/Vivado_HLS/2014.4/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Xilinx/Vivado_HLS/2014.4/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Xilinx/Vivado_HLS/2014.4/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Xilinx/Vivado_HLS/2014.4/lib/classes/jargs.jar;C:/Xilinx/Vivado_HLS/2014.4/win64/tools/eclipse/plugins/org.eclipse.emf.common_2.10.0.v20140514-1158.jar;C:/Xilinx/Vivado_HLS/2014.4/win64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.10.0.v20140514-1158.jar;C:/Xilinx/Vivado_HLS/2014.4/win64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.10.0.v20140514-1158.jar;C:/Xilinx/Vivado_HLS/2014.4/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Xilinx/Vivado_HLS/2014.4/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pp.0.cpp.ap-line.cpp"  -m "dijkstra" -o "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/solution1.directive --source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/dijkstra.cpp --error C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S MulnS" --ve --vetcl C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db --lp --ca --es --gf --df --pd --p2d C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db --sd --scff C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pp.0.cpp.ap-cdt.cpp C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pragma.0.cpp C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 18.454 sec.
+@I [HLS-0] CDT processor time: 7 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado_HLS/2014.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado_HLS/2014.4/common/technology/autopilot" -I "C:/Xilinx/Vivado_HLS/2014.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pragma.2.cpp"
+
+@I [HLS-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado_HLS/2014.4/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado_HLS/2014.4/common/technology/autopilot" -I "C:/Xilinx/Vivado_HLS/2014.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.g.bc"
+@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/ve_warning.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 19.609 sec.
+@I [HLS-10] Validating synthesis directives ...
+@0 [HLS-0] Validating synthesis directives ...
+@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 19.609 sec.
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.bc"  -disable-opt  -LC:/Xilinx/Vivado_HLS/2014.4/win64/lib -lm_basic -o "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.o.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.g.bc"  -disable-opt  -LC:/Xilinx/Vivado_HLS/2014.4/win64/lib -lm_basic -o "C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.g.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 "
+@I [HLS-100] Command "cleanup_all_models "
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 0Total elapsed time: 20.77 sec.
+@I [HLS-10] Starting code transformations ...
+@0 [HLS-0] Starting code transformations ...
+@I [HLS-0] std xform: transform -hls -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -indvars -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -basicaa  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loop-simplify -indvars -instcombine  -simplifycfg -mem2reg -loop-simplify -indvars -instcombine  -gvn -gvn -instcombine -adce  -break-crit-edges  -simplifycfg -loop-delete  -global-array-opt -dce -dse -adce  -find-syn-modules -top dijkstra  -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -interface-preproc  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -mem2reg -instcombine -dce   -gvn -globaldce -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete -reassociate  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -func-inst -deadargelim  -promote-dbg-pointer  -norm-name   C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.g.0.bc -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.g.1.bc -f  -phase std-opt
+@I [HLS-0] Std xform time: 0 seconds per iteration
+@I [HLS-10] Checking synthesizability ...
+@0 [HLS-0] Checking synthesizability ...
+@I [HLS-0] syn check 1/2: transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -function-inline -dce  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -ptrLegalization   -simplifycfg -deadargelim  -instcombine -dce -inst-simplify -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -globaldce    C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.g.1.bc -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.g.2.prechk.bc -f
+@I [HLS-0] Syn check 1/2 time: 0 seconds per iteration
+@I [HLS-0] syn check 2/2: transform -syn-check   C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] Share syncheck's 1.bc for syn flow: copy C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.g.1.bc to C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.o.1.bc
+@I [HLS-0] presyn 1: transform -hls -tmp C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db -type-info -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -deadargelim  -instcombine -dce  -pointer-simplify -dce  -port-alignment -dce  -interface-preproc  -data-pack -instcombine -dce   -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -loop-simplify -indvars -instcombine  -gvn -loop-simplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -auto-loop-pipeline  -inst-simplify  -interface-preproc  -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -gvn -disable-agg-range -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce -auto-par -instcombine -dce  -array-transform-check  -array-partition -instcombine -simplifycfg -dce  -ptrArgReplace -global-constprop -deadargelim -mem2reg  -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg  -instcombine -simplifycfg -dce  -array-reshape -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -function-inline  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -loop-delete -instcombine -simplifycfg -dce -loop-simplify -simplifycfg -loop-stream -instcombine -simplifycfg -dce -globaldce  -funstream-prep -function-stream -dce -globaldce  -array-streaming -instcombine -simplifycfg -dce    -group-axi-access    -simplifycfg -dce -loop-delete  -norm-name  C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.o.1.bc -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.o.1.tmp.bc -f
+@I [XFORM-501] Unrolling loop 'reset' (dijkstra_hls/dijkstra.cpp:12) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'input_copy_o' (dijkstra_hls/dijkstra.cpp:18) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'input_copy_i' (dijkstra_hls/dijkstra.cpp:20) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'max_values_o' (dijkstra_hls/dijkstra.cpp:30) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'max_values_i' (dijkstra_hls/dijkstra.cpp:35) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'min_o' (dijkstra_hls/dijkstra.cpp:43) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'min_i' (dijkstra_hls/dijkstra.cpp:47) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'substract_o' (dijkstra_hls/dijkstra.cpp:58) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'substract_i' (dijkstra_hls/dijkstra.cpp:62) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'mark_vertex_o' (dijkstra_hls/dijkstra.cpp:69) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'mark_vertex_i' (dijkstra_hls/dijkstra.cpp:73) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'check' (dijkstra_hls/dijkstra.cpp:86) in function 'dijkstra' completely.
+@I [XFORM-501] Unrolling loop 'send_result' (dijkstra_hls/dijkstra.cpp:96) in function 'dijkstra' completely.
+@I [XFORM-102] Partitioning array 'result' automatically.
+@I [XFORM-101] Partitioning array 'vector'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.0'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.1'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.2'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.3'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.4'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.5'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.6'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'matrix.7'  in dimension 1 completely.
+@I [HLS-0] Presyn 1 time: 1 seconds per iteration
+@I [HLS-0] presyn 2: transform -hls -keep-callgraph -scalarrepl -mem2reg  -port-alignment -dce  -indvars -loop-bound  -inst-simplify -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -simplify-global-access  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.o.2.bc -f  -phase presyn
+@I [XFORM-401] Performing if-conversion on hyperblock from (dijkstra_hls/dijkstra.cpp:44:4) to (dijkstra_hls/dijkstra.cpp:59:4) in function 'dijkstra'... converting 17 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock to (dijkstra_hls/dijkstra.cpp:27:3) in function 'dijkstra'... converting 9 basic blocks.
+@I [XFORM-11] Balancing expressions in function 'dijkstra' (dijkstra_hls/dijkstra.cpp:3)...6 expression(s) balanced.
+@I [HLS-0] Presyn 2 time: 0 seconds per iteration
+@I [HLS-0] build ssdm: transform -hls -function-uniquify -auto-function-inline  -loop-simplify -indvars -licm -loop-dep  -loop-bound -licm -loop-simplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify   -array-burst -promote-global-argument -dce  -axi4-lower -array-seg-normalize  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm  -inst-simplify -dce  -globaldce -array-streaming -instcombine  -dce   -deadargelim -doublePtrSimplify  -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -indvars -pointer-simplify -dce -loop-bound  -loop-simplify -loop-preproc  -constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -interface-preproc -interface-gen  -directive-preproc -inst-simplify -dce  -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loop-simplify  -clean-region -io-protocol  -find-region -mem2reg  -loop-simplify -phi-opt -bitop-raise  -inst-simplify -inst-rectify -instcombine -adce -deadargelim  -cfgopt -simplifycfg -strip-dead-prototypes  -interface-lower -bitop-lower -intrinsic-lower  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify  -dce -bitop-lower  -loop-rewind -pointer-simplify -dce -cfgopt  -norm-name -legalize -read-loop-dep -dce -bitwidth   -cdfg-build  C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.o.2.bc -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
+@I [HLS-0] Build ssdm time: 1 seconds per iteration
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 3.838Total elapsed time: 23.914 sec.
+@I [HLS-111] Elapsed time: 24.383 seconds; current memory usage: 91.4 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 14.508Total elapsed time: 23.946 sec.
+@I [HLS-100] Command "autosyn "
+@I [HLS-10] Starting hardware synthesis ...
+@0 [HLS-0] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'dijkstra' ...
+@0 [HLS-0] Synthesizing 'dijkstra' ...
+@I [HLS-100] Command "ap_set_top_model dijkstra "
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0Total elapsed time: 23.961 sec.
+@I [HLS-100] Command "get_model_list dijkstra -filter all-wo-channel -topdown "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 23.961 sec.
+@I [HLS-100] Command "preproc_iomode -model dijkstra "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 23.961 sec.
+@I [HLS-100] Command "get_model_list dijkstra -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 23.961 sec.
+@I [HLS-0] Model list for configure: dijkstra
+@I [HLS-0] Configuring Module : dijkstra ...
+@I [HLS-100] Command "set_default_model dijkstra "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 23.961 sec.
+@I [HLS-100] Command "apply_spec_resource_limit dijkstra "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 23.961 sec.
+@I [HLS-0] Model list for preprocess: dijkstra
+@I [HLS-0] Preprocessing Module: dijkstra ...
+@I [HLS-100] Command "set_default_model dijkstra "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 23.961 sec.
+@I [HLS-100] Command "cdfg_preprocess -model dijkstra "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.249Total elapsed time: 24.211 sec.
+@I [HLS-100] Command "rtl_gen_preprocess dijkstra "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 24.211 sec.
+@I [HLS-0] Model list for synthesis: dijkstra
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'dijkstra' 
+@0 [HLS-0] -- Scheduling module 'dijkstra' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model dijkstra "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 24.211 sec.
+@I [HLS-100] Command "schedule -model dijkstra "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 1.903Total elapsed time: 26.114 sec.
+@I [HLS-111] Elapsed time: 2.2 seconds; current memory usage: 102 MB.
+@I [HLS-100] Command "report -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.046Total elapsed time: 26.192 sec.
+@I [HLS-100] Command "db_write -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.172Total elapsed time: 26.364 sec.
+@I [HLS-0] Finish scheduling dijkstra.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'dijkstra' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'dijkstra' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model dijkstra "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 26.364 sec.
+@I [HLS-100] Command "bind -model dijkstra "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=dijkstra
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.172Total elapsed time: 26.535 sec.
+@I [HLS-111] Elapsed time: 0.436 seconds; current memory usage: 104 MB.
+@I [HLS-100] Command "report -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.141Total elapsed time: 26.722 sec.
+@I [HLS-100] Command "db_write -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.203Total elapsed time: 26.925 sec.
+@I [HLS-0] Finish binding dijkstra.
+@I [HLS-100] Command "get_model_list dijkstra -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 26.925 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Command "rtl_gen_preprocess dijkstra "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 26.925 sec.
+@I [HLS-0] Model list for RTL generation: dijkstra
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'dijkstra' 
+@0 [HLS-0] -- Generating RTL for module 'dijkstra' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model dijkstra -vendor xilinx -mg_file C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.compgen.tcl "
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/d_in_data_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/d_in_last_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/start_point_V' to 's_axilite & ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/d_out_data_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'dijkstra/d_out_last_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on function 'dijkstra' to 's_axilite & ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'dijkstra'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.202Total elapsed time: 27.128 sec.
+@I [HLS-111] Elapsed time: 0.593 seconds; current memory usage: 105 MB.
+@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 27.175 sec.
+@I [HLS-100] Command "gen_rtl dijkstra -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/syn/systemc/dijkstra -synmodules dijkstra "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.016Total elapsed time: 27.190 sec.
+@I [HLS-100] Command "gen_rtl dijkstra -istop -style xilinx -f -lang vhdl -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/syn/vhdl/dijkstra "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.062Total elapsed time: 27.253 sec.
+@I [HLS-100] Command "gen_rtl dijkstra -istop -style xilinx -f -lang vlog -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/syn/verilog/dijkstra "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.063Total elapsed time: 27.315 sec.
+@I [HLS-100] Command "export_constraint_db -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.constraint.tcl -f -tool general "
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0Total elapsed time: 27.315 sec.
+@I [HLS-100] Command "report -model dijkstra -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.design.xml -verbose -f -dv "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.093Total elapsed time: 27.409 sec.
+@I [HLS-100] Command "gen_tb_info dijkstra -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra -p C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 27.409 sec.
+@I [HLS-100] Command "report -model dijkstra -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/syn/report/dijkstra_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.063Total elapsed time: 27.471 sec.
+@I [HLS-100] Command "report -model dijkstra -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/syn/report/dijkstra_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.046Total elapsed time: 27.518 sec.
+@I [HLS-100] Command "report -model dijkstra -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.219Total elapsed time: 27.736 sec.
+@I [HLS-100] Command "db_write -model dijkstra -o C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.281Total elapsed time: 28.17 sec.
+@I [HLS-100] Command "sc_get_clocks dijkstra "
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 0Total elapsed time: 28.704 sec.
+@I [HLS-100] Command "sc_get_portdomain dijkstra "
+@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 0Total elapsed time: 28.704 sec.
+@I [HLS-0] Model list for RTL component generation: dijkstra
+@I [HLS-0] Handling components in module [dijkstra] ... 
 @I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.585 sec.
+@I [HLS-0] Found component dijkstra_AXILiteS_s_axi.
+@I [HLS-0] Append model dijkstra_AXILiteS_s_axi
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.719 sec.
+@I [HLS-0] Append model dijkstra
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: dijkstra_AXILiteS_s_axi dijkstra
+@I [HLS-0] To file: write model dijkstra_AXILiteS_s_axi
+@I [HLS-0] To file: write model dijkstra
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-0] RTL Generation done.
+@I [HLS-0] CAS Generation done.
+@I [HLS-0] CBC Generation done.
+@I [HLS-100] Command "export_ssdm C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/a.export.ll "
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0.016Total elapsed time: 28.750 sec.
 @I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.593 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.750 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.750 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.750 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.750 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.750 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.750 sec.
+@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.750 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 28.766 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.766 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.766 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.766 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.766 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.766 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 28.782 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.782 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.782 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.094Total elapsed time: 28.875 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 28.906 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.156Total elapsed time: 28.906 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.906 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.156Total elapsed time: 28.906 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.156Total elapsed time: 28.906 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.906 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.906 sec.
+@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.906 sec.
+@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.906 sec.
+@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.906 sec.
 @I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.compgen.tcl "
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.601 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.602 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.602 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.603 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.04Total elapsed time: 2.634 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.646 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.646 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.693 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.695 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.724 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.724 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.725 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.725 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.769 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.770 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.770 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.771 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.808 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.821 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.822 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.823 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.832 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.832 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.832 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.833 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.833 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.834 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.836 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.836 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 2.839 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 2.843 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 2.850 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 2.850 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 2.857 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 2.866 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.866 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.105Total elapsed time: 2.971 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024Total elapsed time: 2.995 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.16Total elapsed time: 2.995 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.996 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.163Total elapsed time: 2.997 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.163Total elapsed time: 2.997 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.998 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 2.998 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.17 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.20 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.21 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.21 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.22 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.22 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.23 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.24 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.25 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 6.27 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 6.30 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 6.37 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 6.37 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 6.44 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 6.52 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.53 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.104Total elapsed time: 6.157 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.029Total elapsed time: 6.186 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.163Total elapsed time: 6.186 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.187 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.164Total elapsed time: 6.187 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.164Total elapsed time: 6.187 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.188 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.188 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.193 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.195 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.198 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.199 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.200 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.200 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.201 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.201 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.202 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.203 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.204 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 6.206 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 6.209 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 6.216 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 6.216 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 6.223 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 6.231 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.231 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.095Total elapsed time: 6.326 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.025Total elapsed time: 6.351 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.149Total elapsed time: 6.351 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.352 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.15Total elapsed time: 6.352 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.15Total elapsed time: 6.352 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 6.354 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 6.354 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.358 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.359 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.380 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.381 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.384 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.385 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.385 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.386 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.387 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 6.390 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.392 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.393 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 6.396 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 6.399 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 6.406 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 6.406 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 6.414 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 6.422 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.423 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.092Total elapsed time: 6.515 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024Total elapsed time: 6.539 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.148Total elapsed time: 6.539 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.540 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.149Total elapsed time: 6.540 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.149Total elapsed time: 6.540 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.541 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 6.541 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.559 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.61 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.65 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.65 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.66 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.67 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.67 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.67 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.69 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.69 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 9.71 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 9.74 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 9.81 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 9.81 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 9.88 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 9.97 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.97 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.093Total elapsed time: 9.190 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024Total elapsed time: 9.214 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.146Total elapsed time: 9.214 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.215 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.148Total elapsed time: 9.215 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.148Total elapsed time: 9.215 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.216 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.216 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.221 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.222 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.225 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.227 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.227 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.228 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.229 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.229 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.229 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.231 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.231 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 9.233 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 9.236 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 9.243 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 9.243 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 9.250 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 9.258 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.258 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.093Total elapsed time: 9.351 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.023Total elapsed time: 9.374 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.145Total elapsed time: 9.375 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.376 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.147Total elapsed time: 9.376 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.147Total elapsed time: 9.376 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.377 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.377 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.383 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.385 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.405 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/dijkstra.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.406 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.409 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.409 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.410 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.411 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.411 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 9.417 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.419 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.419 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 9.421 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 9.424 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 9.431 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 9.431 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 9.439 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 9.447 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 9.448 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.099Total elapsed time: 9.547 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.027Total elapsed time: 9.574 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.156Total elapsed time: 9.574 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.575 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.158Total elapsed time: 9.575 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.158Total elapsed time: 9.575 sec.
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
-@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2014.4/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 9.577 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 9.577 sec.
-@I [HLS-100] Command "source C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS/dijkstra_hls/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.589 sec.
-@I [HLS-100] Command 'export_design' returned 0; elapsed 9.997Total elapsed time: 12.227 sec.
+@I [HLS-100] Command "source ./AXILiteS.slave.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 28.922 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 28.938 sec.
+@I [HLS-10] Finished generating all RTL models.
+@0 [HLS-0] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'dijkstra'.
+@I [WVHDL-304] Generating RTL VHDL for 'dijkstra'.
+@I [WVLOG-307] Generating RTL Verilog for 'dijkstra'.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 4.992Total elapsed time: 28.938 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 19.5Total elapsed time: 28.938 sec.
 @I [HLS-100] Command "cleanup_all "
-@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0Total elapsed time: 12.228 sec.
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.016Total elapsed time: 28.953 sec.
