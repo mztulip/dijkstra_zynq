@@ -156,15 +156,27 @@ void PrintResult(void)
 void SoftDijkstraCalculate(void)
 {
 	//void alg(char tab[N+1][N+1], char prev[N+1]) {
-	uint8_t (*tab)[N] = graph1;
+	//uint8_t (*tab)[N] = graph1;
+	uint8_t tab[N][N];
 	int i, j;
-	int p = 1;
+	int p = 0; //start vertex
 	char list[N];
 	char prev[N];
 
 	for(i = 0; i < N; i++)
 	{
+		for(j = 0; j < N; j++)
+		{
+			tab[i][j]=graph1[i][j];
+		}
+	}
+	for(i = 0; i < N; i++)
+	{
 		list[i] = 0;
+	}
+	for(i = 0; i < N; i++)
+	{
+		prev[i] = 0;
 	}
 	list[0] = 1;
 
@@ -174,27 +186,27 @@ void SoftDijkstraCalculate(void)
 		{
 			for (j = 0; j < N; j++)
 			{
-				if (tab[i][j] > 0)
+
+				if(p != j)
 				{
-					if (prev[j] == 0)
-						prev[j] = i;
-
 					if (list[j] == 0)
+					{
 						list[j] = 1;
-
-					if (tab[p][j] == 0)
+					}
+					//tab[p][j] - wskazuje obecna odleglosc
+					//w t ablicy od wierzcholka startowego
+					//jesli obecna jest mniejsza to ja aktualizuj
+					volatile uint8_t a = tab[p][j]; //odlesglosc od poczatku do obecnie przetwarzanego (w tablicy)
+					volatile uint8_t b = tab[p][i]; //odleglosc od poczatku do poprzednika obecnego
+					volatile uint8_t c = tab[i][j]; //odleglosc miedzy poprzednikiem a obecnym
+					if (tab[p][j] >= tab[p][i] + tab[i][j])
 					{
 						tab[p][j] = tab[p][i] + tab[i][j];
-					}
-					else
-					{
-						if (tab[p][j] > tab[p][i] + tab[i][j])
-						{
-							tab[p][j] = tab[p][i] + tab[i][j];
-							prev[j] = i;
-						}
+						tab[j][p] = tab[p][j];
+						prev[j] = i;
 					}
 				}
+
 			}
 			list[i] = 2;
 		}
@@ -308,9 +320,9 @@ void SoftDijkstra2Calculate(void)
 void DijkstraCalculate(void)
 {
 	int Status;
-
+	XDijkstra_Set_start_point_V(&Dijkstra, START_POINT);
 	XDijkstra_Start(&Dijkstra);
-	XDijkstra_Set_start_point_V(&Dijkstra, 1);
+
 	Status = XAxiDma_SimpleTransfer(&AxiDma, (u32) TxBufferPtr,
 	N * N, XAXIDMA_DMA_TO_DEVICE);
 

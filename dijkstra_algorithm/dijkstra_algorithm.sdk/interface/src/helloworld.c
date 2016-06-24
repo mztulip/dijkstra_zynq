@@ -38,6 +38,7 @@ XTime StopSoftTime;
 
 uint8_t graph[N][N];
 uint8_t result[N];
+bool clear_graph = true;
 
 int main()
 {
@@ -58,8 +59,12 @@ int main()
 	do
 	{
 		WelcomeMenu();
-		InitTable();
+		if(clear_graph)
+		{
+			InitTable();
+		}
 		ScanTable();
+		printf("\nMatrix tused to calculation:\n");
 		PrintTable();
 
 		FillBuffer(graph);
@@ -70,7 +75,15 @@ int main()
 		SoftDijkstraCalculate();
 		XTime_GetTime(&StopSoftTime);
 		PrintResult();
-		printf("\nFinish.");
+		xil_printf("\n\rFinish. Are you want use the same matrix again?[Y/n]:");
+		BufferPut();
+		if(buffer[0] == 'n')
+		{
+			clear_graph = true;
+		}else
+		{
+			clear_graph = false;
+		}
 
 	} while(1);
 	cleanup_platform();
@@ -193,7 +206,11 @@ void PrintResult(void)
 	Xil_DCacheInvalidateRange((u32) RxBufferPtr, 32);
 	for (i = 0; i < N; i++)
 	{
-		if (result[i] == 1)
+		if(i == StartPoint)
+		{
+					printf("%d:*\n",i);
+		}
+		else if (result[i] == 1)
 			printf("%d:%d\n", i, RxBufferPtr[i]);
 		else
 			printf("%d:-\n",i);
@@ -202,19 +219,33 @@ void PrintResult(void)
 	printf("\nExecution time:%llu ns", (unsigned long long) (temp));
 	temp = ((StopSoftTime - StartSoftTime) * 1000000000) / COUNTS_PER_SECOND;
 	printf("\nSoft Execution time:%llu ns", (unsigned long long) (temp));
+	fflush(stdout);
 }
 
 void SoftDijkstraCalculate(void)
 {
-	uint8_t (*tab)[N] = graph;
+	//void alg(char tab[N+1][N+1], char prev[N+1]) {
+	//uint8_t (*tab)[N] = graph1;
+	uint8_t tab[N][N];
 	int i, j;
-	int p = 1;
+	int p = 0; //start vertex
 	char list[N];
 	char prev[N];
 
-	for (i = 0; i < N; i++)
+	for(i = 0; i < N; i++)
+	{
+		for(j = 0; j < N; j++)
+		{
+			tab[i][j]=graph[i][j];
+		}
+	}
+	for(i = 0; i < N; i++)
 	{
 		list[i] = 0;
+	}
+	for(i = 0; i < N; i++)
+	{
+		prev[i] = 0;
 	}
 	list[0] = 1;
 
@@ -224,33 +255,137 @@ void SoftDijkstraCalculate(void)
 		{
 			for (j = 0; j < N; j++)
 			{
-				if (tab[i][j] > 0)
+
+				if(p != j)
 				{
-					if (prev[j] == 0)
-						prev[j] = i;
-
 					if (list[j] == 0)
+					{
 						list[j] = 1;
-
-					if (tab[p][j] == 0)
+					}
+					//tab[p][j] - wskazuje obecna odleglosc
+					//w t ablicy od wierzcholka startowego
+					//jesli obecna jest mniejsza to ja aktualizuj
+					volatile uint8_t a = tab[p][j]; //odlesglosc od poczatku do obecnie przetwarzanego (w tablicy)
+					volatile uint8_t b = tab[p][i]; //odleglosc od poczatku do poprzednika obecnego
+					volatile uint8_t c = tab[i][j]; //odleglosc miedzy poprzednikiem a obecnym
+					if (tab[p][j] >= tab[p][i] + tab[i][j])
 					{
 						tab[p][j] = tab[p][i] + tab[i][j];
-					}
-					else
-					{
-						if (tab[p][j] > tab[p][i] + tab[i][j])
-						{
-							tab[p][j] = tab[p][i] + tab[i][j];
-							prev[j] = i;
-						}
+						tab[j][p] = tab[p][j];
+						prev[j] = i;
 					}
 				}
+
 			}
 			list[i] = 2;
 		}
 	}
 }
+void SoftDijkstra2Calculate(void)
+{
+	//void alg(char tab[N+1][N+1], char prev[N+1]) {
+	uint8_t (*tab)[N] = graph;
+	static char vector[N];
+	static unsigned char copy[N][N];
+	static unsigned char result[N];
+	int i,e;
 
+
+	for(i = 0; i < N;i++)
+	{
+			vector[i] = 0;
+	}
+	vector[1]=1;
+
+	for(i = 0; i < N;i++)
+	{
+		for(e = 0;e < N ;e++)
+		{
+			copy[i][e] = tab[i][e];
+		}
+	}
+
+	while(1)
+	{
+		for(i = 0; i < N;i++)
+		{
+			if(vector[i] == 1)
+			{
+				for( e = 0; e < N;e++)
+				{
+					copy[e][i]=255;
+				}
+			}
+		}
+	//	print_table(tab);
+		//znajdz minimum
+		int min = 255;
+		for(i = 0; i < N;i++)//skacze po wierszach
+		{
+
+			if(vector[i] == 1)
+			{
+				for(e = 0; e < N;e++)
+				{
+
+					if(copy[i][e]  < min)
+					{
+						min = copy[i][e];
+					}
+
+				}
+			}
+		}
+
+		//teraz odejmij minimalna wartosc
+		//dla wszystkiech elementow wiersza
+		//dla wierszy gdzie vector == 1
+		for(i = 0; i < N;i++)//skacze po wierszach
+		{
+			if(vector[i] == 1)
+			{
+				//szuka minimum
+				for(e = 0; e < N;e++)
+				{
+					copy[i][e] -= min;
+				}
+			}
+		}
+
+		for(i = 0; i < N;i++)//skacze po wierszach
+			{
+				if(vector[i] == 1)
+				{
+					//szuka minimum
+					for(e = 0; e < N;e++)
+					{
+
+						if(copy[i][e] == 0)
+						{
+								vector[e]=1;
+								result[e] = i;
+						}
+
+					}
+				}
+			}
+
+
+		//jesli wszystkie elementy wektora == 1
+		//to koniec
+		uint8_t end = 1;
+		for(i = 0; i < N;i++)
+		{
+			if(vector[i] != 1)
+			{
+				end = 0;
+			}
+		}
+		if(end) break;
+
+	}
+
+}
 
 void DijkstraCalculate(void)
 {

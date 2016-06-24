@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date             : Fri Jun 17 00:26:30 2016
+| Date             : Thu Jun 23 23:57:35 2016
 | Host             : xzkljcsabdye running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb
 | Design           : design_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.801 |
-| Dynamic (W)              | 1.640 |
+| Total On-Chip Power (W)  | 1.807 |
+| Dynamic (W)              | 1.645 |
 | Device Static (W)        | 0.162 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 64.2  |
@@ -49,20 +49,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.057 |        5 |       --- |             --- |
+| Clocks                   |     0.061 |        5 |       --- |             --- |
 | Slice Logic              |     0.023 |    33638 |       --- |             --- |
-|   LUT as Logic           |     0.020 |    11808 |     53200 |           22.19 |
+|   LUT as Logic           |     0.020 |    11814 |     53200 |           22.20 |
 |   CARRY4                 |     0.001 |      601 |     13300 |            4.51 |
 |   Register               |    <0.001 |    15946 |    106400 |           14.98 |
 |   F7/F8 Muxes            |    <0.001 |      351 |     53200 |            0.65 |
 |   LUT as Distributed RAM |    <0.001 |       42 |     17400 |            0.24 |
 |   LUT as Shift Register  |    <0.001 |     1235 |     17400 |            7.09 |
 |   Others                 |     0.000 |      932 |       --- |             --- |
-| Signals                  |     0.026 |    23306 |       --- |             --- |
+| Signals                  |     0.027 |    23310 |       --- |             --- |
 | Block RAM                |     0.003 |       16 |       140 |           11.42 |
 | PS7                      |     1.531 |        1 |       --- |             --- |
 | Static Power             |     0.162 |          |           |                 |
-| Total                    |     1.801 |          |           |                 |
+| Total                    |     1.807 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.125 |       0.108 |      0.016 |
+| Vccint    |       1.000 |     0.130 |       0.113 |      0.016 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -150,7 +150,7 @@ Table of Contents
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                                                                                                              | Power (W) |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| design_1_wrapper                                                                                                                                                                                  |     1.640 |
+| design_1_wrapper                                                                                                                                                                                  |     1.645 |
 |   dbg_hub                                                                                                                                                                                         |     0.003 |
 |     inst                                                                                                                                                                                          |     0.003 |
 |       UUT_MASTER                                                                                                                                                                                  |     0.003 |
@@ -224,9 +224,9 @@ Table of Contents
 |         U_STAT                                                                                                                                                                                    |    <0.001 |
 |         U_SYNC                                                                                                                                                                                    |    <0.001 |
 |       bscan_inst                                                                                                                                                                                  |    <0.001 |
-|   design_1_i                                                                                                                                                                                      |     1.637 |
-|     axi_dma_0                                                                                                                                                                                     |     0.010 |
-|       U0                                                                                                                                                                                          |     0.010 |
+|   design_1_i                                                                                                                                                                                      |     1.641 |
+|     axi_dma_0                                                                                                                                                                                     |     0.011 |
+|       U0                                                                                                                                                                                          |     0.011 |
 |         I_AXI_DMA_REG_MODULE                                                                                                                                                                      |     0.001 |
 |           GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                                                                                                                           |    <0.001 |
 |           GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER                                                                                                                                                  |    <0.001 |
@@ -280,7 +280,7 @@ Table of Contents
 |             I_RESET                                                                                                                                                                               |    <0.001 |
 |           GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                                                                                                                                                       |     0.004 |
 |             ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF                                                                                                                                                 |    <0.001 |
-|             GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT                                                                                                                                                   |    <0.001 |
+|             GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT                                                                                                                                                   |     0.001 |
 |               ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF                                                                                                                                               |    <0.001 |
 |               I_DATA_FIFO                                                                                                                                                                         |    <0.001 |
 |                 BLK_MEM.I_SYNC_FIFOGEN_FIFO                                                                                                                                                       |    <0.001 |
@@ -452,12 +452,12 @@ Table of Contents
 |               wrouter_aw_fifo                                                                                                                                                                     |    <0.001 |
 |                 gen_srls[0].gen_rep[0].srl_nx1                                                                                                                                                    |    <0.001 |
 |             splitter_aw_mi                                                                                                                                                                        |    <0.001 |
-|     dijkstra_1                                                                                                                                                                                    |     0.023 |
-|       inst                                                                                                                                                                                        |     0.023 |
+|     dijkstra_1                                                                                                                                                                                    |     0.024 |
+|       inst                                                                                                                                                                                        |     0.024 |
 |         dijkstra_AXILiteS_s_axi_U                                                                                                                                                                 |    <0.001 |
-|     ila_0                                                                                                                                                                                         |     0.008 |
-|       inst                                                                                                                                                                                        |     0.008 |
-|         ila_core_inst                                                                                                                                                                             |     0.008 |
+|     ila_0                                                                                                                                                                                         |     0.009 |
+|       inst                                                                                                                                                                                        |     0.009 |
+|         ila_core_inst                                                                                                                                                                             |     0.009 |
 |           ila_trace_memory_inst                                                                                                                                                                   |    <0.001 |
 |             SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                                                                                                                              |    <0.001 |
 |               inst_blk_mem_gen                                                                                                                                                                    |    <0.001 |
@@ -518,7 +518,7 @@ Table of Contents
 |                         u_srlB                                                                                                                                                                    |    <0.001 |
 |                         u_srlC                                                                                                                                                                    |    <0.001 |
 |                         u_srlD                                                                                                                                                                    |    <0.001 |
-|           u_ila_regs                                                                                                                                                                              |     0.006 |
+|           u_ila_regs                                                                                                                                                                              |     0.007 |
 |             MU_SRL[0].mu_srl_reg                                                                                                                                                                  |    <0.001 |
 |             MU_SRL[1].mu_srl_reg                                                                                                                                                                  |    <0.001 |
 |             MU_SRL[2].mu_srl_reg                                                                                                                                                                  |    <0.001 |
@@ -706,9 +706,9 @@ Table of Contents
 |                     u_srlC                                                                                                                                                                        |    <0.001 |
 |                     u_srlD                                                                                                                                                                        |    <0.001 |
 |           xsdb_memory_read_inst                                                                                                                                                                   |    <0.001 |
-|     ila_1                                                                                                                                                                                         |     0.008 |
-|       inst                                                                                                                                                                                        |     0.008 |
-|         ila_core_inst                                                                                                                                                                             |     0.008 |
+|     ila_1                                                                                                                                                                                         |     0.009 |
+|       inst                                                                                                                                                                                        |     0.009 |
+|         ila_core_inst                                                                                                                                                                             |     0.009 |
 |           ila_trace_memory_inst                                                                                                                                                                   |    <0.001 |
 |             SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                                                                                                                              |    <0.001 |
 |               inst_blk_mem_gen                                                                                                                                                                    |    <0.001 |
@@ -769,7 +769,7 @@ Table of Contents
 |                         u_srlB                                                                                                                                                                    |    <0.001 |
 |                         u_srlC                                                                                                                                                                    |    <0.001 |
 |                         u_srlD                                                                                                                                                                    |    <0.001 |
-|           u_ila_regs                                                                                                                                                                              |     0.006 |
+|           u_ila_regs                                                                                                                                                                              |     0.007 |
 |             MU_SRL[0].mu_srl_reg                                                                                                                                                                  |    <0.001 |
 |             MU_SRL[1].mu_srl_reg                                                                                                                                                                  |    <0.001 |
 |             MU_SRL[2].mu_srl_reg                                                                                                                                                                  |    <0.001 |
@@ -957,8 +957,8 @@ Table of Contents
 |                     u_srlC                                                                                                                                                                        |    <0.001 |
 |                     u_srlD                                                                                                                                                                        |    <0.001 |
 |           xsdb_memory_read_inst                                                                                                                                                                   |    <0.001 |
-|     ila_2                                                                                                                                                                                         |     0.022 |
-|       inst                                                                                                                                                                                        |     0.022 |
+|     ila_2                                                                                                                                                                                         |     0.023 |
+|       inst                                                                                                                                                                                        |     0.023 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA  |    <0.001 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB  |    <0.001 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC  |    <0.001 |
@@ -983,7 +983,7 @@ Table of Contents
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlB |    <0.001 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlC |    <0.001 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlD |    <0.001 |
-|         ila_core_inst/u_ila_regs/U_XSDB_SLAVE                                                                                                                                                     |     0.003 |
+|         ila_core_inst/u_ila_regs/U_XSDB_SLAVE                                                                                                                                                     |     0.004 |
 |         ila_core_inst/u_trig/U_TM/G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA                                      |    <0.001 |
 |         ila_core_inst/u_trig/U_TM/G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB                                      |    <0.001 |
 |         ila_core_inst/u_trig/U_TM/G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC                                      |    <0.001 |
@@ -1236,8 +1236,8 @@ Table of Contents
 |         ila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[5].U_ALL_SRL_SLICE/u_srlB                                        |    <0.001 |
 |         ila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[5].U_ALL_SRL_SLICE/u_srlC                                        |    <0.001 |
 |         ila_core_inst/u_trig/genblk1[0].U_TC/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[5].U_ALL_SRL_SLICE/u_srlD                                        |    <0.001 |
-|     ila_3                                                                                                                                                                                         |     0.022 |
-|       inst                                                                                                                                                                                        |     0.022 |
+|     ila_3                                                                                                                                                                                         |     0.024 |
+|       inst                                                                                                                                                                                        |     0.024 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA  |    <0.001 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB  |    <0.001 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC  |    <0.001 |
@@ -1262,7 +1262,7 @@ Table of Contents
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlB |    <0.001 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlC |    <0.001 |
 |         ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[1].U_ALL_SRL_SLICE/u_srlD |    <0.001 |
-|         ila_core_inst/u_ila_regs/U_XSDB_SLAVE                                                                                                                                                     |     0.003 |
+|         ila_core_inst/u_ila_regs/U_XSDB_SLAVE                                                                                                                                                     |     0.004 |
 |         ila_core_inst/u_trig/U_TM/G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlA                                      |    <0.001 |
 |         ila_core_inst/u_trig/U_TM/G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlB                                      |    <0.001 |
 |         ila_core_inst/u_trig/U_TM/G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[0].U_ALL_SRL_SLICE/u_srlC                                      |    <0.001 |

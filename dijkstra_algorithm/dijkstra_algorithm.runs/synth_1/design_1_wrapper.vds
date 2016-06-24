@@ -2,14 +2,15 @@
 # Vivado v2014.4 (64-bit)
 # SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Fri Jun 17 00:11:39 2016
-# Process ID: 7576
+# Start of session at: Thu Jun 23 23:44:15 2016
+# Process ID: 6000
 # Log file: C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.runs/synth_1/design_1_wrapper.vds
 # Journal file: C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl
 # set_param gui.test TreeTableDev
 # debug::add_scope template.lib 1
+# set_msg_config -id {Common-41} -limit 4294967295
 # set_msg_config -id {HDL 9-1061} -limit 100000
 # set_msg_config -id {HDL 9-1654} -limit 100000
 # create_project -in_memory -part xc7z020clg484-1
@@ -26,7 +27,7 @@ source design_1_wrapper.tcl
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/HLS'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 344.980 ; gain = 168.074
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 345.277 ; gain = 168.605
 # set_property used_in_implementation false [get_files -all c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 # set_property used_in_implementation false [get_files -all c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc]
 # set_property used_in_implementation false [get_files -all c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc]
@@ -58,9 +59,9 @@ Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -168 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -175 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 384.207 ; gain = 222.215
+Starting RTL Elaboration : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 384.000 ; gain = 221.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:78]
@@ -19219,7 +19220,7 @@ WARNING: [Synth 8-350] instance 'rst_processing_system7_0_100M' of module 'desig
 INFO: [Synth 8-256] done synthesizing module 'design_1' (188#1) [C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/hdl/design_1.v:12]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (189#1) [C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:06:30 ; elapsed = 00:06:36 . Memory (MB): peak = 810.336 ; gain = 648.344
+Finished RTL Elaboration : Time (s): cpu = 00:06:36 ; elapsed = 00:06:41 . Memory (MB): peak = 810.727 ; gain = 648.438
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -19330,7 +19331,7 @@ INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[6] to constant 0 
 INFO: [Synth 8-3295] tying undriven pin \prim_noinit.ram :DINA[5] to constant 0 [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/ipshared/xilinx.com/blk_mem_gen_v8_2/38e122e0/hdl/blk_mem_gen_v8_2_vhsyn_rfs.vhd:183401]
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:06:32 ; elapsed = 00:06:38 . Memory (MB): peak = 810.336 ; gain = 648.344
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:06:38 ; elapsed = 00:06:43 . Memory (MB): peak = 810.727 ; gain = 648.438
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1151 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -19377,16 +19378,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 24 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1088.727 ; gain = 0.926
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 1089.180 ; gain = 0.926
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:07:04 ; elapsed = 00:07:10 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished Constraint Validation : Time (s): cpu = 00:07:10 ; elapsed = 00:07:16 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:07:04 ; elapsed = 00:07:10 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished Loading Part and Timing Information : Time (s): cpu = 00:07:10 ; elapsed = 00:07:16 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -19409,7 +19410,7 @@ Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/m00_coupl
 Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.runs/synth_1/dont_touch.xdc, line 50).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_dma_0/U0. (constraint file  C:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.runs/synth_1/dont_touch.xdc, line 63).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:07:14 ; elapsed = 00:07:20 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:07:21 ; elapsed = 00:07:27 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'GEN_SYNC_WRITE.rst_wvalid_re_reg' into 'GEN_SYNC_WRITE.bvalid_i_reg' [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/ipshared/xilinx.com/axi_dma_v7_1/2a047f91/hdl/src/vhdl/axi_dma_lite_if.vhd:271]
 INFO: [Synth 8-4471] merging register 'GEN_SYNC_READ.rst_rvalid_re_reg' into 'GEN_SYNC_READ.s_axi_lite_rvalid_i_reg' [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/ipshared/xilinx.com/axi_dma_v7_1/2a047f91/hdl/src/vhdl/axi_dma_lite_if.vhd:1042]
@@ -19950,7 +19951,7 @@ WARNING: [Synth 8-3848] Net FTMD_TRACEIN_ATID_i in module/entity processing_syst
 WARNING: [Synth 8-3848] Net FTMD_TRACEIN_DATA_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1070]
 WARNING: [Synth 8-3848] Net FTMD_TRACEIN_VALID_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1071]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:07:27 ; elapsed = 00:07:34 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:07:34 ; elapsed = 00:07:41 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -26654,7 +26655,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:07:28 ; elapsed = 00:07:36 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:07:35 ; elapsed = 00:07:42 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -26931,9 +26932,9 @@ ROM size is below threshold of ROM address width. It will be mapped to LUTs
 ROM "ila_core_inst/xsdb_memory_read_inst/read_en" won't be mapped to RAM because it is too sparse.
 ROM "ila_core_inst/xsdb_memory_read_inst/read_addr" won't be mapped to RAM because it is too sparse.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:07:39 ; elapsed = 00:07:46 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished Cross Boundary Optimization : Time (s): cpu = 00:07:46 ; elapsed = 00:07:53 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:07:39 ; elapsed = 00:07:46 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished Parallel Reinference  : Time (s): cpu = 00:07:46 ; elapsed = 00:07:53 . Memory (MB): peak = 1089.180 ; gain = 926.891
 
 Report RTL Partitions: 
 +------+-----------------------------+------------+----------+
@@ -27167,12 +27168,12 @@ INFO: [Synth 8-3332] Sequential element (\reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_re
 INFO: [Synth 8-3332] Sequential element (\reg_2/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[14] ) is unused and will be removed from module ila_v5_0_ila_register__parameterized0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:07:55 ; elapsed = 00:08:04 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished Area Optimization : Time (s): cpu = 00:08:02 ; elapsed = 00:08:10 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:07:55 ; elapsed = 00:08:04 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished Area Optimization : Time (s): cpu = 00:08:02 ; elapsed = 00:08:10 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:07:55 ; elapsed = 00:08:04 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished Parallel Area Optimization  : Time (s): cpu = 00:08:02 ; elapsed = 00:08:10 . Memory (MB): peak = 1089.180 ; gain = 926.891
 
 Report RTL Partitions: 
 +------+-----------------------------+------------+----------+
@@ -27182,7 +27183,7 @@ Report RTL Partitions:
 |2     |design_1__GCB0               |           1|     23614|
 |3     |design_1__GCB1               |           1|     10798|
 +------+-----------------------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:07:55 ; elapsed = 00:08:04 . Memory (MB): peak = 1088.727 ; gain = 926.734
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:08:02 ; elapsed = 00:08:11 . Memory (MB): peak = 1089.180 ; gain = 926.891
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -27206,10 +27207,10 @@ WARNING: [Synth 8-3321] Empty from list for constraint at line 56 of c:/Users/bu
 WARNING: [Synth 8-3321] Empty from list for constraint at line 62 of c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_ila_3_0/ila_v5_0/constraints/ila.xdc. [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_ila_3_0/ila_v5_0/constraints/ila.xdc:62]
 WARNING: [Synth 8-3321] Empty from list for constraint at line 63 of c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_ila_3_0/ila_v5_0/constraints/ila.xdc. [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/bd/design_1/ip/design_1_ila_3_0/ila_v5_0/constraints/ila.xdc:63]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:24 ; elapsed = 00:08:33 . Memory (MB): peak = 1180.840 ; gain = 1018.848
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:33 ; elapsed = 00:08:42 . Memory (MB): peak = 1180.621 ; gain = 1018.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:28 ; elapsed = 00:08:37 . Memory (MB): peak = 1196.949 ; gain = 1034.957
+Finished Timing Optimization : Time (s): cpu = 00:08:36 ; elapsed = 00:08:45 . Memory (MB): peak = 1196.734 ; gain = 1034.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -27224,7 +27225,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:08:51 ; elapsed = 00:09:03 . Memory (MB): peak = 1226.148 ; gain = 1064.156
+Finished Technology Mapping : Time (s): cpu = 00:08:59 ; elapsed = 00:09:11 . Memory (MB): peak = 1228.418 ; gain = 1066.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -27276,7 +27277,7 @@ Finished Final Netlist Cleanup
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/ipshared/xilinx.com/xsdbs_v1_0/7ccd9811/hdl/xsdbs_v1_0_vl_rfs.v:803]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Users/buleks/Desktop/sdwup/projekt/dijkstra_zynq/dijkstra_algorithm/dijkstra_algorithm.srcs/sources_1/ipshared/xilinx.com/xsdbs_v1_0/7ccd9811/hdl/xsdbs_v1_0_vl_rfs.v:803]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:08:54 ; elapsed = 00:09:06 . Memory (MB): peak = 1226.148 ; gain = 1064.156
+Finished IO Insertion : Time (s): cpu = 00:09:02 ; elapsed = 00:09:14 . Memory (MB): peak = 1228.418 ; gain = 1066.129
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -27289,7 +27290,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:08:55 ; elapsed = 00:09:06 . Memory (MB): peak = 1226.148 ; gain = 1064.156
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:03 ; elapsed = 00:09:14 . Memory (MB): peak = 1228.418 ; gain = 1066.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -27303,7 +27304,7 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:59 ; elapsed = 00:09:10 . Memory (MB): peak = 1226.148 ; gain = 1064.156
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:07 ; elapsed = 00:09:18 . Memory (MB): peak = 1228.418 ; gain = 1066.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -28053,11 +28054,11 @@ Report Instance Areas:
 |660   |          xsdb_memory_read_inst                                           |ltlib_v1_0_generic_memrd                                           |    96|
 +------+--------------------------------------------------------------------------+-------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:09:00 ; elapsed = 00:09:12 . Memory (MB): peak = 1226.148 ; gain = 1064.156
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:08 ; elapsed = 00:09:20 . Memory (MB): peak = 1228.418 ; gain = 1066.129
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2217 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:08:33 . Memory (MB): peak = 1226.148 ; gain = 602.777
-Synthesis Optimization Complete : Time (s): cpu = 00:09:00 ; elapsed = 00:09:12 . Memory (MB): peak = 1226.148 ; gain = 1064.156
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:08:41 . Memory (MB): peak = 1228.418 ; gain = 604.688
+Synthesis Optimization Complete : Time (s): cpu = 00:09:08 ; elapsed = 00:09:20 . Memory (MB): peak = 1228.418 ; gain = 1066.129
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1548 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -28085,8 +28086,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1763 Infos, 228 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:09:06 ; elapsed = 00:09:17 . Memory (MB): peak = 1226.148 ; gain = 881.168
+synth_design: Time (s): cpu = 00:09:14 ; elapsed = 00:09:25 . Memory (MB): peak = 1228.418 ; gain = 883.141
 # write_checkpoint -noxdef design_1_wrapper.dcp
 # catch { report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb }
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.490 . Memory (MB): peak = 1226.148 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 17 00:21:10 2016...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.487 . Memory (MB): peak = 1228.418 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 23 23:53:54 2016...
